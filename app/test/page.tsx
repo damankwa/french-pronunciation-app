@@ -13,7 +13,7 @@ export default function Component() {
       <p>Regular: {count}</p> {/* Always 0 */}
       <p>State: {stateCount}</p> {/* Actually increases */}
       <button
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         onClick={() => {
           count++; // Lost on next render!
           setStateCount(stateCount + 1); // Remembered!
