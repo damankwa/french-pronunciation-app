@@ -15,7 +15,9 @@ export default async function Home() {
     console.error('Error fetching lessons:', error);
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="text-red-600">Error loading lessons. Check console.</div>
+        <div className="text-red-600">
+          Error loading lessons. Check console.
+        </div>
       </div>
     );
   }
@@ -50,18 +52,18 @@ export default async function Home() {
                     </div>
                   )}
                 </div>
-                
+
                 {/* Title and description */}
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {lesson.title}
                 </h3>
-                
+
                 {lesson.description && (
                   <p className="text-gray-600 text-sm mb-4">
                     {lesson.description}
                   </p>
                 )}
-                
+
                 {/* CTA */}
                 <div className="flex items-center text-blue-600 font-medium mt-auto">
                   <BookOpen className="w-5 h-5 mr-2" />

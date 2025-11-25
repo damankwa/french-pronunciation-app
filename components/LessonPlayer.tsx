@@ -38,7 +38,7 @@ export default function LessonPlayer({ lesson, phrases }: LessonPlayerProps) {
           </span>
         </div>
         <div className="w-full bg-gray-300 rounded-full h-2.5">
-          <div 
+          <div
             className="bg-blue-600 h-2.5 rounded-full transition-all duration-300"
             style={{ width: `${progressPercent}%` }}
           />
@@ -50,11 +50,11 @@ export default function LessonPlayer({ lesson, phrases }: LessonPlayerProps) {
           <div className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
             {currentPhrase.french_text}
           </div>
-          
+
           <div className="text-2xl text-gray-600 mb-3">
             {currentPhrase.english_translation}
           </div>
-          
+
           {currentPhrase.phonetic_guide && (
             <div className="text-lg text-gray-500 italic font-mono">
               [{currentPhrase.phonetic_guide}]
@@ -63,7 +63,7 @@ export default function LessonPlayer({ lesson, phrases }: LessonPlayerProps) {
         </div>
 
         <div className="flex justify-center mb-8">
-          <button 
+          <button
             className="group bg-blue-600 hover:bg-blue-700 text-white rounded-full p-8 shadow-lg transition-all hover:shadow-xl active:scale-95"
             onClick={() => alert('Audio feature coming in next phase! 🎵')}
           >
@@ -87,7 +87,7 @@ export default function LessonPlayer({ lesson, phrases }: LessonPlayerProps) {
             <ChevronLeft className="w-5 h-5" />
             Previous
           </button>
-          
+
           <button
             onClick={goToNext}
             disabled={currentIndex === phrases.length - 1}

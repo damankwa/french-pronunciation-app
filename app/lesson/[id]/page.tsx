@@ -6,7 +6,8 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
 interface LessonPageProps {
-  params: Promise<{    // ← Changed: params is now a Promise
+  params: Promise<{
+    // ← Changed: params is now a Promise
     id: string;
   }>;
 }
@@ -36,7 +37,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
     <main className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <Link 
+          <Link
             href="/"
             className="inline-flex items-center text-blue-600 hover:text-blue-700 mb-6"
           >
