@@ -39,3 +39,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# Generated audio files
+audio_output/
+*.mp3
+
+# Virtual environment (if you create one)
+venv/
+env/
